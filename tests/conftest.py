@@ -1,18 +1,15 @@
 import pytest
-import requests
 
 
 def pytest_addoption(parser):
     parser.addoption(
         "--url",
-        # default="https://ya.ru",
-        default="https://dog.ceo"
+        default="https://ya.ru",
     )
 
     parser.addoption(
         "--status_code",
         default=200,
-        # choices=["get", "post", "put", "patch", "delete"],
     )
 
 
